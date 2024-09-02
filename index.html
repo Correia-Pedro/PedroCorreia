@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empréstimo</title>
+    <h1>Solicite seu empréstimo</h1>
+</head>
+<body>
+    <script>
+        let entrada;
+        let soma = 0;
+        let contador = 0;
+
+        // Usamos um loop "while" para repetir até que o usuário digite "sair"
+        while (entrada !== "sair") {
+            entrada = prompt("Digite um valor ou 'sair' para encerrar:");
+
+        // Verifica se o valor não é "sair" antes de fazer a soma
+        if (entrada !== "sair") {
+            soma += parseFloat(entrada); // Converte a entrada para número e soma
+            contador++;
+            alert("Soma até agora: " + soma);
+            alert("Média até agora: " + (soma / contador));
+        }
+            }
+    </script>
+</body>
+</html>
